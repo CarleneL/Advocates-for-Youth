@@ -1,0 +1,296 @@
+/* 
+Dark-blue = #353866
+Lavendar = #AAAbd3
+Pink overlay = CBA6c3
+*/
+
+/* Nav Bar */
+#logo {
+	width: 86px;
+	height: 86px;
+	margin-top: -20px;
+}
+
+.navbar {
+	margin-bottom: 0;
+}
+
+.nav {
+	float: right;
+}
+
+.navbar .nav > li > a {
+	color: #AAAbd3;
+}
+/*Donate button/link configuration */
+
+.btn{
+	border: 1px solid #353866;
+	border-radius: 4px;
+	background: transparent;
+}
+
+.donate_link{
+	text-decoration: none;
+	color: #AAAbd3;
+}
+
+.btn:hover{
+	background-color: #AAAbd3;
+	border:none;
+}
+
+.btn:hover a{
+	color: white;
+	text-decoration: none;
+}
+/* end of donate button */
+/* End of Nav bar */
+
+/*Landing page */
+.jumbotron {
+	background-image:url('neighborhood_playing.jpg');
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+	
+.jumbotron .container {
+  position: relative;
+  top:100px;
+}
+
+.jumbotron h1 {
+  color: #AAAbd3;
+  font-size: 36px;  
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold;
+  float: right;
+}
+
+/*org name on the langing page */
+.A{
+	font-size: 48px;
+}
+
+
+#mission {
+	width: 517px;
+	height:180px;
+	border: 1px solid white;
+	border-radius: 2px;
+	/*background-color: #AAAbd3;*/
+	background: rgba(170,171,211,.3);
+	float: right;
+}	
+
+#mission_content p{
+	color: white;
+	font-size: 32px;
+	text-align: center;
+	margin-top: 25px;
+}
+
+/*transition button*/
+
+
+
+
+/*page css */
+
+.title {
+	color:#AAAbd3;
+	line-height: 1;
+	text-align: center;
+}
+/*About page */
+.about .container{
+	background-color: #353866;
+	height:100%;
+	width: 100%;
+}
+
+
+/*Services page */
+.services .container{
+	height:100%;
+	width: 100%;
+}
+
+.service_img{
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+}
+
+.srvc_img_overlay {
+  bottom: 0;left: 0; top: 0; right: 0;
+  height: 300px;
+  width: 300px;
+  margin: auto;
+  position: absolute;
+  background-color:#CBA6c3;
+  border-radius: 50%;
+  opacity:.5;
+}
+
+.srvc_img_text {
+	color: #353866;
+  font-weight:bold;
+  font-size:36px;
+  padding-top: 35%;
+  /*padding-bottom:50%;*/
+  text-align:center;
+}
+/*news and events */
+.events .container{
+	height: 90%;
+	width: 100%;
+}
+
+.news_events {
+	background-color: #353866;
+	height: 81%;
+}
+
+.news_events h1{
+	line-height: 400px;
+	text-align: center;
+	font-size: 48px;
+	color:#AAAbd3;
+}
+
+.event_content{
+	height: 90%;
+/*	background-image: url(people_on_line.jpg);
+	background-size: cover;*/
+}
+
+.carousel-inner{
+	max-height: 90% !important;
+	margin-top: 20px;
+}
+/*Get involved*/
+.get_involved .container{
+	height:90%;
+	width: 100%;
+}
+
+.vol_call{
+	height:90%;
+	width: 100%;
+	margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+#vol_image{
+	height:300px;
+	width: 400px;
+	margin: auto;
+  position: absolute;
+  top:400; left: 0; bottom: 0; right: 0;
+}
+
+.image_overlay{
+bottom: 0;left: 0; top: 400; right: 0;
+  height: 300px;
+  width: 400px;
+  margin: auto;
+  position: absolute;
+  background-color:#CBA6c3;
+ /* border-radius: 50%;*/
+  opacity:.5;
+}
+
+.vol_img_text {
+	color: #353866;
+  font-weight:bold;
+  font-size:36px;
+  padding-top: 25%;
+  /*padding-bottom:50%;*/
+  text-align:center;
+}
+/*Sponsors */
+.sponsors .container{
+	height: 100%;
+	width: 100%;
+}
+
+.sponsors-msg{
+	height: 100%;
+	background-color: #353866;
+}
+
+/*footer*/
+.footer .container{
+	width: 100%;
+}
+/*.contact, .social{
+	background-color: lightgray;
+}
+*/
+.contact, .social, .logo_footer{
+	height: 120px;
+
+}
+
+/*social media icons */
+.social{
+	margin-top: 40px;
+}
+.social h2{
+	margin-right: 20px; 
+	color: #353866;
+}
+
+.fa{
+	font-size: 40px;
+	margin-left: 10px;
+	margin-right: 10px;
+	color: #353866;
+}
+
+.fa:hover{
+	color: #AAAbd3;
+}
+
+.logo_footer{
+	margin-left: 50px;
+	margin-top: 80px;
+}
+
+.logo_footer #logo{
+	padding-top: 15px;
+	height: 115px;
+}
+
+/*contact us */
+.contact{
+	margin-top: 40px;
+}
+
+.contact h2{
+	color: #353866;
+	margin-left: 10px;
+}
+
+.mailing p{
+	margin-bottom: 5px;
+	margin-top: 5px;
+	margin-left: 0px;
+	padding-left: 0;
+}
+
+.mailing .fa-home{
+	float: right;
+	padding-right:0;
+	margin-right: 0;
+}
+
+.address{
+	border-right: 2px solid lightgray;
+}
+
