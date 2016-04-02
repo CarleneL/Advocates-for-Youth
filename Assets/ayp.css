@@ -21,6 +21,7 @@ Pink overlay = CBA6c3
 
 .navbar .nav > li > a {
 	color: #AAAbd3;
+	font-size: 20px;
 }
 /*Donate button/link configuration */
 
@@ -28,11 +29,13 @@ Pink overlay = CBA6c3
 	border: 1px solid #353866;
 	border-radius: 4px;
 	background: transparent;
+	margin-left: 20px;
 }
 
 .donate_link{
 	text-decoration: none;
 	color: #AAAbd3;
+	font-size: 20px;
 }
 
 .btn:hover{
@@ -179,6 +182,10 @@ Pink overlay = CBA6c3
 	width: 100%;
 }
 
+.services .title{
+	margin-bottom: 70px;
+}
+
 .service_img{
 	height: 300px;
 	width: 300px;
@@ -272,6 +279,27 @@ bottom: 0;left: 0; top: 400; right: 0;
   padding-top: 25%;
   /*padding-bottom:50%;*/
   text-align:center;
+}
+
+
+/* Get involved Donate */
+.donate_call p{
+	padding-top: 50px;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 24px;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	color: lightgray;
+}
+.donate_call .btn{
+	margin-left: 35%;
+}
+
+.btn.donate{
+	background-color:#353866;
+	color: white; 
+	font-size: 30px;
 }
 /*Sponsors */
 .sponsors .container{
