@@ -13,6 +13,8 @@ Pink overlay = CBA6c3
 
 .navbar {
 	margin-bottom: 0;
+	background: white;
+	border-bottom: none;
 }
 
 .nav {
@@ -22,6 +24,10 @@ Pink overlay = CBA6c3
 .navbar .nav > li > a {
 	color: #AAAbd3;
 	font-size: 20px;
+}
+
+.dropdown-toggle:active{
+	background: white;
 }
 /*Donate button/link configuration */
 
@@ -46,6 +52,16 @@ Pink overlay = CBA6c3
 .btn:hover a{
 	color: white;
 	text-decoration: none;
+}
+
+.btn:focus{
+	outline: 0;
+	text-decoration: none;
+	background-color: #AAAbd3;
+}
+
+.btn:focus a{
+	color: white;
 }
 /* end of donate button */
 /* End of Nav bar */
@@ -211,6 +227,8 @@ Pink overlay = CBA6c3
   /*padding-bottom:50%;*/
   text-align:center;
 }
+
+
 /*news and events */
 .events .container{
 	height: 90%;
@@ -238,7 +256,23 @@ Pink overlay = CBA6c3
 .carousel-inner{
 	max-height: 90% !important;
 	margin-top: 20px;
+	z-index: -1;
 }
+
+.carousel-indicators{
+	bottom: 10px;
+}
+
+.carousel-indicators li {
+  background: transparent;
+  border: 1px solid #353866;
+}
+
+.carousel-indicators .active {
+  background-color: #353866;
+}
+
+
 /*Get involved*/
 .get_involved .container{
 	height:90%;
@@ -290,17 +324,38 @@ bottom: 0;left: 0; top: 400; right: 0;
 	font-size: 24px;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
-	color: lightgray;
+	color: #353866;
 }
 .donate_call .btn{
 	margin-left: 35%;
 }
+
+
 
 .btn.donate{
 	background-color:#353866;
 	color: white; 
 	font-size: 30px;
 }
+
+.btn.donate:focus{
+	outline: 0;
+}
+
+/* Donation Modal */
+.donate_message {
+	margin-bottom: 30px;
+	font-size: 20px;
+}
+
+.ways_to_donate p {
+	text-align: center;
+}
+
+.ways_to_donate i {
+	padding-left: 50px;
+}
+
 /*Sponsors */
 .sponsors .container{
 	height: 100%;
@@ -320,10 +375,7 @@ bottom: 0;left: 0; top: 400; right: 0;
 .footer .container{
 	width: 100%;
 }
-/*.contact, .social{
-	background-color: lightgray;
-}
-*/
+
 .contact, .social, .logo_footer{
 	height: 120px;
 
@@ -382,7 +434,13 @@ bottom: 0;left: 0; top: 400; right: 0;
 	margin-right: 0;
 }
 
-.address{
+/*.address{
 	border-right: 2px solid lightgray;
-}
+}*/
 
+#email{
+	text-decoration: none;
+	color: #353866;
+	font-weight: bold;
+	font-size: 20px;
+}

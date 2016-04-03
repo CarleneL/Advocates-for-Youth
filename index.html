@@ -8,12 +8,11 @@
 	   	<!-- <link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'> -->
 	   	<link rel="stylesheet" href="Assets/ayp.css">
 	   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	   	<!--script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script--> 
 	   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	</head>
 
 	<body>
-		<nav class="navbar navbar-default">
+		<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
@@ -43,7 +42,7 @@
 		        </li>
 		        <li><a href="#events">Events</a></li>
 		        <li><a href="#get_involved">Get Involved</a></li>
-		        <li><button type="button" class="btn btn-default navbar-btn"><a href="#" class="donate_link">Donate</a></button></li>
+		        <li><button type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#donateModal"><a href="#" class="donate_link">Donate</a></button></li>
 		      </ul>
 		      
 		    </div> <!--/.navbar-collapse -->
@@ -186,6 +185,7 @@
 					<div class = "col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0;">
 						<div class="news_events">
 							<h1> News and Events </h1>
+							<p class = "desc"></p>
 						</div>
 					</div>
 					<div class = "col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0;">
@@ -196,7 +196,7 @@
 								<ol class="carousel-indicators">
 									<li data-target="#event-carousel" data-slide-to="0" class="active"></li>
 									<li data-target="#event-carousel" data-slide-to="1"></li>
-									<li data-target="#event-carousel" data-slide-to="2"></li>
+									<!-- <li data-target="#event-carousel" data-slide-to="2"></li>  Add more of these as more pics are available-->
 								</ol>
 
 								<!-- Wrapper for slides -->
@@ -205,14 +205,16 @@
 									  <img src="Assets/people_on_line.jpg" alt="People waiting on line">
 									  <div class="carousel-caption">
 									    <h1> Chump Change </h1>
-									    <h3> Learn more </h3>
+									    <h3 class = "chump_change">Learn more </h3>
+									  
 									  </div>
 									</div>
 									<div class="item">
 									  <img src="Assets/GirlReading.jpeg" alt="Girl Reading">
 									  <div class="carousel-caption">
-									    <h1>Learning Seminar </h1>
+									    <h1><a href="" class="chump" role="button" target="_blank">Learning Seminar </a></h1>
 									    <h3>Learn more </h3>
+									
 									  </div>
 									</div>
 								
@@ -260,7 +262,7 @@
 							<p>
 								At Advocates for Young People,  our core belief is "change a life,  you can make a difference."  Support Advocates for Young People by becoming an advocate today!
 							</p>
-							<button type="button" class="btn btn-default donate" aria-label="Left Align"> Donate
+							<button type="button" class="btn btn-default donate" aria-label="Left Align" data-toggle="modal" data-target="#donateModal"> Donate
   								<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
 							</button>
 						</div>
@@ -311,7 +313,7 @@
 										<div class = "col-xs-12 col-sm-12 col-md-5" style="padding:0">
 											<div class="mailing">
 												<p><i class="fa fa-phone-square"></i> 407 706 9533</p>
-												<p> <i class="fa fa-envelope-square"></i><a href="mailto:advocates4youngpeople@gmail.com">  advocates4youngpeople </a> </p>
+												<p> <i class="fa fa-envelope-square"></i><a href="mailto:advocates4youngpeople@gmail.com" id="email">  Say Hello! </a> </p>
 											</div>
 										</div>
 									</div>
@@ -327,7 +329,7 @@
 					<div class = "col-xs-5 col-sm-5 col-md-5 col-lg-5" style="padding:0;">
 						<div class="social">
 							<h2>Follow Us</h2>
-
+							<a href="https://www.facebook.com" ><i class="fa fa-facebook-square"></i></a>
 							<a href="https://www.instagram.com/aypflorida/" ><i class="fa fa-instagram"></i></a>
 							
 							<a href="https://twitter.com/ayp_florida" data-show-count="false"><i class="fa fa-twitter-square"></i></a>
@@ -337,37 +339,39 @@
 			</div>
 		</div> 
 
-		<div class="modal fade" id="contact-modal" tabindex="-1" role="dialog">
-		  <div class="modal-dialog">
+
+		<!-- Donate! -->
+		<div class="modal fade" id="donateModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
 		    <div class="modal-content">
 		      <div class="modal-header">
 		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		        <h4 class="modal-title">Say Hello!</h4>
+		        <h4 class="modal-title" id="myModalLabel">Become an Advocate!</h4>
 		      </div>
 		      <div class="modal-body">
-		        <form action="mailto:cl2294@gmail.com" method="post" enctype="text/plain">
-		        	<div class="form-group">
-					    <label for="exampleInputPassword1">Name</label>
-					    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Your Name">
-					  </div>
-				  <div class="form-group">
-				    <label for="exampleInputEmail1">Email address</label>
-				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-				  </div>
-				  <div class="form-group">
-				    <label for="exampleInputEmail1">Subject</label>
-				    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Subject">
-				  </div>
-				  <div class="form-group">
-				    <label for="exampleInputEmail1">Message</label>
-				    <textarea type="text" class="form-control" id="exampleInputEmail1"></textarea>
-				  </div>
-				  <button type="submit" class="btn btn-default">Send</button>
-				</form>
+		      	<div class = "donate_message">
+		        	Every dollar makes a difference. Click on each of the ways to donate below to learn more
+		        </div>
+		        <div class ="container ways_to_donate">
+		        	<div class = "row">
+		        		<div class = "col-md-4">
+		        			<i class="fa fa-cc-paypal"></i>
+		        			<p class="text-muted"> Donate directly to us via our PayPal account </p>
+		        		</div>
+		        		<div class = "col-md-4">
+		        			<i class="fa fa-users"></i>
+		        			<p class = "text-muted"> Visit our CrowdFunding site </p>
+		        		</div>
+		        		<div class = "col-md-4">
+		        			<i class="fa fa-gift"></i>
+		        			<p class = "text-muted"> Mail us a one time donation! </p>
+		        		</div>
+		        	</div>
+		        </div>
 		      </div>
-		    </div><!-- /.modal-content -->
-		  </div><!-- /.modal-dialog -->
-		</div><!-- /.modal -->
+		    </div>
+		  </div>
+		</div>
 
 
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
@@ -387,6 +391,28 @@
     			}
   			});
 		});
+
+			$(window).scroll(function() { // check if scroll event happened
+		        if ($(document).scrollTop() > 600) { // check if user scrolled more than 50 from top of the browser window
+		          $(".navbar-fixed-top").css("background", "rgba(211,211,211,.5"); // if yes, then make it transparent
+		          $(".donate_link").css("color", "white");	
+		        } else {
+		          $(".navbar-fixed-top").css("background-color", "white");
+		          $(".donate_link").css("color", "#AAAbd3"); // if not, change it back to transparent
+		        }
+		      });
+
+			// function test(){
+			// 	console.log("cicked");
+			// }
+
+			// $('a.chump').click(function(){
+			// 	$('a.chump').css("color", "red");
+			// });
+
+			// $('.carousel-caption h1').click(function(){
+			// 	$('.carousel-caption h1').css('color', 'red');
+			// });
 
 		</script>
 	</body>
