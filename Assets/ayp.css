@@ -69,6 +69,10 @@ Pink overlay = CBA6c3
 	color: white;
 }
 /* end of donate button */
+
+.icon-bar {
+	color: black;
+}
 /* End of Nav bar */
 
 /*Landing page */
@@ -77,9 +81,15 @@ Pink overlay = CBA6c3
 	width: 100%;
 	height: 100%;
 	background-size: cover;
+	background-repeat: no-repeat;
 	margin-bottom: 0;
 	margin-top: 0;
 	background-attachment: fixed;
+-webkit-background-size:cover;
+-moz-background-size:cover;
+-o-background-size:cover;
+background-size:cover;
+background-position:center;
 }
 	
 .jumbotron .container {
