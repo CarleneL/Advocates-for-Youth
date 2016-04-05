@@ -70,14 +70,16 @@ Pink overlay = CBA6c3
 }
 /* end of donate button */
 
-.icon-bar {
-	color: black;
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: black;
 }
+
+
 /* End of Nav bar */
 
 /*Landing page */
 .jumbotron {
-	/*background-image:url('neighborhood_playing.jpg');*/
+	background-image:url('neighborhood_playing.jpg');
 	width: 100%;
 	height: 100%;
 	background-size: cover;
@@ -160,6 +162,24 @@ Pink overlay = CBA6c3
 	font-family: 'Roboto', sans-serif;
 	font-weight: lighter;
 }
+
+@media only screen and (max-width: 480px) {
+    .about .container #backstory{ 
+    	font-size:90%;
+    	padding-left: 20px;
+    	padding-right: 20px;
+
+    }
+ }
+
+ @media only screen and (max-width: 768px) {
+    .about .container #backstory{ 
+    	font-size:90%;
+    	padding-left: 40px;
+    	padding-right: 40px;
+
+    }
+ }
 
 /*scrolling picture on the About page */
 .cd-fixed-bg {
