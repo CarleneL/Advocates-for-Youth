@@ -202,6 +202,17 @@ Pink overlay = CBA6c3
 	font-family: 'Roboto', sans-serif;
 }
 
+@media only screen and (max-width: 480px) {
+	.cd-fixed-bg .mission{
+		padding: 60px 20px 20px 20px;
+		font-size: 20px;
+	}
+
+}
+
+/* End of the Our story */
+/* Our Team section */
+
 .team {
 	background-color: #353866;
 	height: 100%;
@@ -215,6 +226,7 @@ Pink overlay = CBA6c3
 .team .thumbnail{
 	background: transparent;
 	border: none;
+	box-shadow: none;
 }
 
 .team_pic {
@@ -228,7 +240,19 @@ Pink overlay = CBA6c3
 	color: white;
 }
 
+/*Mobile Responsiveness */
+@media only screen and (max-width: 480px) {
+	.caption .name{
+		font-size: 18px;
+	}
 
+	.caption .role{
+		font-size: 14px;
+	}
+
+}
+
+/* End of Our Team */
 /*Services page */
 .services .container{
 	height:100%;
@@ -265,6 +289,26 @@ Pink overlay = CBA6c3
   text-align:center;
 }
 
+/* Mobile Responsiveness */
+@media only screen and (max-width: 480px) {
+	.service_img{
+		height: 175px;
+		width: 175px;
+		border-radius: 50%;
+		margin-bottom: 10px;
+	}
+
+	.srvc_img_overlay {
+	  height: 175px;
+	  width: 175px;
+	  margin-bottom: 10px;
+	}
+
+	.srvc_img_text {
+	  font-size:18px;
+	}
+
+}
 
 /*news and events */
 .events .container{
@@ -311,7 +355,7 @@ Pink overlay = CBA6c3
 
 
 /*Get involved*/
-.get_involved .container{
+.get_involved .container-fluid{
 	height:90%;
 	width: 100%;
 }
@@ -353,6 +397,7 @@ bottom: 0;left: 0; top: 400; right: 0;
 }
 
 
+
 /* Get involved Donate */
 .donate_call p{
 	padding-top: 50px;
@@ -378,6 +423,15 @@ bottom: 0;left: 0; top: 400; right: 0;
 .btn.donate:focus{
 	outline: 0;
 }
+
+/* mobile responsive */
+
+@media only screen and (max-width: 480px) {
+	
+
+
+}
+
 
 /* Donation Modal */
 .donate_message {
@@ -467,7 +521,7 @@ bottom: 0;left: 0; top: 400; right: 0;
 
 .mailing .fa-home{
 	float: right;
-	padding-right:0;
+	padding-right: 0;
 	margin-right: 0;
 }
 
@@ -480,4 +534,22 @@ bottom: 0;left: 0; top: 400; right: 0;
 	color: #353866;
 	font-weight: bold;
 	font-size: 20px;
+}
+
+/* mobile responsive */
+
+@media only screen and (max-width: 480px) {
+
+	.mailing{
+		padding-left: 10px;
+	}
+
+	.address{
+		margin-left: 0;
+	}
+
+	.logo_footer{
+		display: none;
+	}
+
 }
