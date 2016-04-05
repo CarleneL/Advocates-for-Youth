@@ -132,6 +132,23 @@ Pink overlay = CBA6c3
 	margin-top: 25px;
 }
 
+
+@media only screen and (max-width: 480px) {
+	#org_name{
+		margin-top: 125px;
+	}
+	#mission{
+		width:375px;
+		height: 250px;
+	}
+
+	#mission_content{
+		font-size: 18px;
+	}
+
+
+}	
+
 /*transition button*/
 
 
@@ -146,13 +163,13 @@ Pink overlay = CBA6c3
 	padding-top: 40px;
 }
 /*About page */
-.about .container{
+.about .container-fluid{
 	background-color: #353866;
 	height:100%;
 	width: 100%;
 }
 
-.about .container #backstory{
+.about .container-fluid #backstory{
 	text-align: justify;
 	font-size: 24px;
 	color: white;
@@ -164,22 +181,15 @@ Pink overlay = CBA6c3
 }
 
 @media only screen and (max-width: 480px) {
-    .about .container #backstory{ 
-    	font-size:90%;
+    .about .container-fluid #backstory{ 
     	padding-left: 20px;
     	padding-right: 20px;
+    	font-size: 16px;
 
-    }
+	}	
  }
 
- @media only screen and (max-width: 768px) {
-    .about .container #backstory{ 
-    	font-size:90%;
-    	padding-left: 40px;
-    	padding-right: 40px;
-
-    }
- }
+ 
 
 /*scrolling picture on the About page */
 .cd-fixed-bg {
@@ -242,12 +252,25 @@ Pink overlay = CBA6c3
 
 /*Mobile Responsiveness */
 @media only screen and (max-width: 480px) {
-	.caption .name{
+/*	.caption .name{
 		font-size: 18px;
 	}
 
 	.caption .role{
 		font-size: 14px;
+	}*/
+
+	.thumbnail.right-caption > img {
+    float: left;
+    margin-right: 9px;
+	}
+
+	.thumbnail.right-caption {
+	    float: left;
+	}
+
+	.thumbnail.right-caption > .caption {
+	    padding: 4px;
 	}
 
 }
@@ -311,7 +334,7 @@ Pink overlay = CBA6c3
 }
 
 /*news and events */
-.events .container{
+.events .container-fluid{
 	height: 90%;
 	width: 100%;
 }
@@ -427,7 +450,9 @@ bottom: 0;left: 0; top: 400; right: 0;
 /* mobile responsive */
 
 @media only screen and (max-width: 480px) {
-	
+	.get_involved .container-fluid{
+		height:40%;
+}
 
 
 }
