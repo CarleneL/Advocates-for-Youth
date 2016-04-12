@@ -16,7 +16,8 @@ Pink overlay = CBA6c3
 	margin-bottom: 0;
 	background: white;
 	border-bottom: none;
-	height: 150px;
+	height: 40px;
+	box-shadow: none;
 }
 
 .nav {
@@ -91,7 +92,8 @@ Pink overlay = CBA6c3
 
 /*Landing page */
 .jumbotron {
-	background-image:url('neighborhood_playing.jpg');
+	/*background-image:url('neighborhood_playing.jpg');*/
+	background-color: white;
 	width: 100%;
 	height: 100%;
 	background-size: cover;
@@ -190,7 +192,54 @@ Pink overlay = CBA6c3
 
 
 
+/* Current features */
+/*.current {
+	height: 100%;
+	width: 100%;
+}*/
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  /*margin-bottom: 60px;*/
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 100;
+}
 
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  /*position: absolute;
+  top: 0;*/
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+.item.active{
+	height: 500px;
+}
+
+.toggleButton{
+	  position: relative;
+	  z-index: 1000;
+	  clear: both;
+}
+
+.carousel-control.left, 
+.carousel-control.right {
+    background-image: none
+}
+
+
+.event_info {
+	display: none;
+}
+/* end of current features */
 /*page css */
 
 .title {
@@ -201,7 +250,8 @@ Pink overlay = CBA6c3
 }
 /*About page */
 .about .container-fluid{
-	background-color: #353866;
+	/*background-color: #353866;*/
+
 	height:100%;
 	width: 100%;
 }
@@ -209,7 +259,7 @@ Pink overlay = CBA6c3
 .about .container-fluid #backstory{
 	text-align: justify;
 	font-size: 24px;
-	color: white;
+	color: #353866;
 	margin-top: 60px;
 	padding-left: 200px;
 	padding-right:200px;
@@ -239,7 +289,7 @@ Pink overlay = CBA6c3
 }
  
 .cd-fixed-bg.cd-bg-1 {
-  background-image: url('swings.jpeg');
+  background-image: url('neighborhood_playing.jpg');
 }
 
 .cd-fixed-bg .mission{
@@ -258,10 +308,13 @@ Pink overlay = CBA6c3
 }
 
 /* End of the Our story */
+
+
+
 /* Our Team section */
 
 .team {
-	background-color: #353866;
+	/*background-color: #353866;*/
 	height: 100%;
 	width: 100%;
 }
@@ -284,7 +337,8 @@ Pink overlay = CBA6c3
 .caption .name, .caption .role{
 	line-height: 1;
 	text-align: center;
-	color: white;
+	color: #353866;
+	font-family: 'Raleway';
 }
 
 /*Mobile Responsiveness */
@@ -373,48 +427,6 @@ Pink overlay = CBA6c3
 
 }
 
-/*news and events */
-.events .container-fluid{
-	height: 90%;
-	width: 100%;
-}
-
-.news_events {
-	background-color: #353866;
-	height: 81%;
-}
-
-.news_events h1{
-	line-height: 400px;
-	text-align: center;
-	font-size: 48px;
-	color:#AAAbd3;
-}
-
-.event_content{
-	height: 90%;
-/*	background-image: url(people_on_line.jpg);
-	background-size: cover;*/
-}
-
-.carousel-inner{
-	max-height: 90% !important;
-	margin-top: 20px;
-	z-index: -1;
-}
-
-.carousel-indicators{
-	bottom: 10px;
-}
-
-.carousel-indicators li {
-  background: transparent;
-  border: 1px solid #353866;
-}
-
-.carousel-indicators .active {
-  background-color: #353866;
-}
 
 
 /*Get involved*/
@@ -633,3 +645,65 @@ bottom: 0;left: 0; top: 400; right: 0;
 	}
 
 }
+
+/*chump change project */
+#shiva
+{
+  width: 100px;
+    height: 100px;
+    background: #353866;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+  float:left;
+  margin:5px;
+}
+.count
+{
+  line-height: 100px;
+  color:white;
+  margin-left:30px;
+  font-size:25px;
+}
+
+
+/* Calendar */
+table {
+   border: 1px solid #999;
+   border-collapse: collapse;
+   font-family: Georgia, Times, serif;
+   margin: 0 auto;
+   }
+   th {
+   border: 1px solid #999;
+   font-size: 70%;
+   text-transform: uppercase;
+   }
+   td {
+   border: 1px solid #999;
+   height: 5em;
+   width:5em;
+   padding: 5px;
+   vertical-align: top;
+   }
+   caption {
+   font-size: 300%;
+   font-style: italic;
+   }
+   .day {
+   text-align: right;
+   }
+   .notes {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 80%;
+   text-align: right;
+   padding-left: 20px;
+   }
+   .birthday {
+   background-color: #ECE;
+   }
+   .weekend {
+   background-color: #F3F3F3;
+   }
+
+  /* end of calendar */
