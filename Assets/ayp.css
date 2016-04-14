@@ -189,36 +189,6 @@ Pink overlay = CBA6c3
 
 }	
 
-/*transition button*/
-
-.transition{
-	border: 3px solid #353866;
-    display: block;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    text-align: center;
-    margin-top: 20px;
-    margin-left: 50%;
-}
-
-.glyphicon.trans{
-	font-size: 35px;
-	margin-top: 40%;
-	margin-left: -5%;
-
-
-}
-
-.transition_button{
-	text-decoration: none;
-	color: lightgray;
-}
-
-.transition_button:hover{
-	text-decoration: none;
-	color: #AAAbd3;
-}
 
 /* Current features */
 /*.current {
@@ -273,7 +243,17 @@ Pink overlay = CBA6c3
 .event_info {
 	display: none;
 }
-/* end of current features */
+
+/* carousel buttons special styling */
+
+.btn.carousel-btn{
+	background-color: #353866;
+	color: white;
+}
+
+/* end of current features carousel */
+
+
 /*page css */
 
 .title {
@@ -310,7 +290,35 @@ Pink overlay = CBA6c3
 	}	
  }
 
- 
+ /*transition button*/
+
+.transition{
+	border: 3px solid #353866;
+    display: block;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 50%;
+}
+
+.glyphicon.trans{
+	font-size: 35px;
+	margin-top: 40%;
+	margin-left: -15%;
+
+}
+
+.transition_button{
+	text-decoration: none;
+	color: lightgray;
+}
+
+.transition_button:hover{
+	text-decoration: none;
+	color: #AAAbd3;
+}
 
 /*scrolling picture on the About page */
 .cd-fixed-bg {
